@@ -1,4 +1,3 @@
-# stage 1
 FROM cogacr1.azurecr.io:latest as node
 WORKDIR /app
 COPY . .
