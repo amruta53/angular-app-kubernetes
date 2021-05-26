@@ -9,3 +9,6 @@ FROM nginx:alpine
 COPY --from=node /app/dist/angular-app /usr/share/nginx/html
 FROM base as stage
 COPY . .
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+COPY . .
